@@ -1,7 +1,8 @@
 <script>
-	import { get } from 'svelte/store'
 	import { currentTheme, toggleTheme } from '../../utils/store'
-	currentTheme.subscribe((i) => console.log(i))
+	import { page } from '$app/stores'
+
+	const path = $page.url.pathname
 </script>
 
 <nav class="px-2 sm:px-4 py-2.5">
@@ -11,7 +12,7 @@
 		</a>
 		<button
 			type="button"
-			class="inline-flex items-center p-2 ml-3 text-sm text-gray-800 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+			class="inline-flex items-center p-2 ml-3 text-sm text-gray-800 rounded-lg md:hidden  focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-white  dark:focus:ring-gray-600"
 		>
 			<!-- <svg
 				class="w-6 h-6"
@@ -31,31 +32,40 @@
 			<ul
 				class="flex flex-col items-center p-4 mt-4 rounded-lg bg-gray-50 md:bg-transparent md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-semibold"
 			>
+				{#if path !== '/'}
+					<li>
+						<a
+							href="/"
+							class="block py-2 pl-3 pr-4 text-gray-700 rounded md:border-0 md:hover:text-sky-600  md:p-0 dark:text-white md:dark:hover:text-sky-300  dark:hover:text-white "
+							>Home</a
+						>
+					</li>
+				{/if}
 				<li>
 					<a
-						href="#about"
-						class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-sky-600  md:p-0 dark:text-gray-400 md:dark:hover:text-sky-300 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+						href="about"
+						class="block py-2 pl-3 pr-4 text-gray-700 rounded md:border-0 md:hover:text-sky-600  md:p-0 dark:text-white md:dark:hover:text-sky-300  dark:hover:text-white "
 						>About</a
 					>
 				</li>
 				<li>
 					<a
-						href="#projects"
-						class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-sky-600  md:p-0 dark:text-gray-400 md:dark:hover:text-sky-300 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+						href={path === '/' ? '#projects' : '/projects'}
+						class="block py-2 pl-3 pr-4 text-gray-700 rounded md:border-0 md:hover:text-sky-600  md:p-0 dark:text-white md:dark:hover:text-sky-300  dark:hover:text-white "
 						>Projects</a
 					>
 				</li>
 				<li>
 					<a
-						href="#writings"
-						class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-sky-600  md:p-0 dark:text-gray-400 md:dark:hover:text-sky-300 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+						href={path === '/' ? '#writings' : '/writings'}
+						class="block py-2 pl-3 pr-4 text-gray-700 rounded md:border-0 md:hover:text-sky-600  md:p-0 dark:text-white md:dark:hover:text-sky-300  dark:hover:text-white "
 						>Writings</a
 					>
 				</li>
 				<li>
 					<a
 						href="#contact"
-						class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-sky-600  md:p-0 dark:text-gray-400 md:dark:hover:text-sky-300 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+						class="block py-2 pl-3 pr-4 text-gray-700 rounded md:border-0 md:hover:text-sky-600  md:p-0 dark:text-white md:dark:hover:text-sky-300  dark:hover:text-white "
 						>Contact</a
 					>
 				</li>

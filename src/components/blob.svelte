@@ -137,7 +137,7 @@
 			transform: none;
 		}
 		50% {
-			transform: translate(50%, 20%) rotateY(10deg) scale(1);
+			transform: trangray(50%, 20%) rotateY(10deg) scale(1);
 		}
 	}
 
@@ -147,7 +147,7 @@
 			transform: none;
 		}
 		50% {
-			transform: translate(50%, 20%) rotate(-200deg) scale(1.3);
+			transform: trangray(50%, 20%) rotate(-200deg) scale(1.3);
 		}
 	}
 </style>
