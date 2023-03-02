@@ -44,3 +44,39 @@ export const toggleTheme = () => {
 
 	applyTheme()
 }
+
+export const projects = [
+	{
+		title: 'Gamestore',
+		desc: 'A place where you can explore and buy exciting video games of various playforms at one place.',
+		link: 'https://github.com/giridhar7632/gamestore'
+	},
+	{
+		title: 'Gamestore',
+		desc: 'A place where you can explore and buy exciting video games of various playforms at one place.',
+		link: 'https://github.com/giridhar7632/gamestore'
+	},
+	{
+		title: 'Gamestore',
+		desc: 'A place where you can explore and buy exciting video games of various playforms at one place.',
+		link: 'https://github.com/giridhar7632/gamestore'
+	}
+]
+
+export const writings = [
+	{
+		title: 'Gamestore',
+		desc: 'A place where you can explore and buy exciting video games of various playforms at one place.',
+		link: 'https://github.com/giridhar7632/gamestore'
+	},
+	{
+		title: 'Gamestore',
+		desc: 'A place where you can explore and buy exciting video games of various playforms at one place.',
+		link: 'https://github.com/giridhar7632/gamestore'
+	},
+	{
+		title: 'Gamestore',
+		desc: 'A place where you can explore and buy exciting video games of various playforms at one place.',
+		link: 'https://github.com/giridhar7632/gamestore'
+	}
+]
