@@ -4,13 +4,21 @@
 	import Footer from '../components/layout/Footer.svelte'
 </script>
 
+<div
+	class="absolute inset-0 w-screen min-h-screen -z-1  bg-[url('/bg.png')] opacity-30 dark:opacity-70 bg-no-repeat bg-top blur-[150px] dark:blur-[132px]"
+/>
 <div class="container max-w-5xl mx-auto flex flex-col min-h-screen">
 	<Nav />
 
-	<main class="flex-1">
+	<main class="flex-1 flex flex-col text-gray-800 dark:text-gray-100">
 		<slot />
 	</main>
-
+	<section id="contact" class="flex flex-col justify-center min-h-[50vh] px-2 md:px-4 my-16">
+		<h2 class="text-5xl font-black my-5">Say hi to me</h2>
+		<p class="text-3xl text-gray-500 dark:text-gray-400 font-bold my-5">
+			<a href={'mailto:giridhar.talla2002@gmail.com'}>👉 giridhar.talla2002@gmail.com</a>
+		</p>
+	</section>
 	<Footer />
 </div>
 
