@@ -3,7 +3,7 @@
 	import Button from '../components/common/Button.svelte'
 	import Card from '../components/common/Card.svelte'
 	import Arrow from '../components/icons/Arrow.svelte'
-	import { applyTheme, DARK_PREFERENCE } from '../utils/store'
+	import { applyTheme, DARK_PREFERENCE, featured } from '../utils/store'
 
 	// import { spring } from 'svelte/motion'
 
@@ -52,9 +52,9 @@
 
 <section id="projects" class="block min-h-screen px-2 py-5 md:px-4 my-10">
 	<h2 class="text-3xl font-black mb-5 text-gray-600 dark:text-gray-300">Projects</h2>
-	<Card />
-	<Card />
-	<Card />
+	{#each featured.projects as project}
+		<Card {...project} />
+	{/each}
 	<a href={'/projects'}>
 		<Button variant="text" class="w-full text-gray-400">
 			All projects
@@ -65,9 +65,9 @@
 
 <section id="writings" class="block min-h-screen px-2 py-5 md:px-4 my-10">
 	<h2 class="text-3xl font-black my-5 text-gray-600 dark:text-gray-300">Writings</h2>
-	<Card />
-	<Card />
-	<Card />
+	{#each featured.writings as post}
+		<Card {...post} />
+	{/each}
 	<a href="/writings">
 		<Button variant="text" class="w-full text-gray-400">
 			All writings
@@ -75,18 +75,3 @@
 		</Button>
 	</a>
 </section>
-
-<style lang="postcss">
-	:global(html) {
-		overflow-x: hidden;
-	}
-	/* svg {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		margin: -8px;
-	}
-	circle {
-		fill: #ff3e00;
-	} */
-</style>

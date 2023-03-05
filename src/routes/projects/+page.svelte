@@ -2,6 +2,7 @@
 	import Button from '../../components/common/Button.svelte'
 	import Card from '../../components/common/Card.svelte'
 	import Arrow from '../../components/icons/Arrow.svelte'
+	import { projects } from '../../utils/store'
 </script>
 
 <section id="projects" class="block min-h-screen px-2 py-5 md:px-4">
@@ -14,7 +15,7 @@
 			><Button>Visit my GitHub <Arrow size={20} /></Button></a
 		>
 	</header>
-	<Card />
-	<Card />
-	<Card />
+	{#each projects as project}
+		<Card {...project} />
+	{/each}
 </section>

@@ -47,36 +47,83 @@ export const toggleTheme = () => {
 
 export const projects = [
 	{
-		title: 'Gamestore',
+		title: '🕹️ Gamestore',
 		desc: 'A place where you can explore and buy exciting video games of various playforms at one place.',
 		link: 'https://github.com/giridhar7632/gamestore'
 	},
 	{
-		title: 'Gamestore',
-		desc: 'A place where you can explore and buy exciting video games of various playforms at one place.',
-		link: 'https://github.com/giridhar7632/gamestore'
+		title: '💻 Zen Meet',
+		desc: 'A simple video conferencing progressive web app with easy to use user UI and fluid user experience. ',
+		link: 'https://github.com/giridhar7632/zen-meet'
 	},
 	{
-		title: 'Gamestore',
-		desc: 'A place where you can explore and buy exciting video games of various playforms at one place.',
-		link: 'https://github.com/giridhar7632/gamestore'
+		title: '✨ Ecommerce CMS',
+		desc: 'The full-stack serverless ecommerce CMS web application creating using Xata and Cloudinary.',
+		link: 'https://github.com/giridhar7632/jamstackhack-22'
+	},
+	{
+		title: '📔 Scrapbook',
+		desc: 'A secure full-stack web application to store your daily memories privately at one place and access them from anywhere.',
+		link: 'https://github.com/giridhar7632/scrapbook-demo'
+	},
+	{
+		title: '📊 Sort Viz',
+		desc: 'A simple and scalable bubble sort algorithm visualizer created from scratch using React and modular CSS.',
+		link: 'https://github.com/giridhar7632/sort-viz'
+	},
+	{
+		title: '🤖 Timezome Bot',
+		desc: 'A discord bot that converts one time zone to another 🕖 => 🕞',
+		link: 'https://github.com/giridhar7632/timezone-bot'
+	},
+	{
+		title: '🏵️ Profile Links',
+		desc: 'An open source app for storing all your important links in one place and add your profile in social media bio.',
+		link: 'https://github.com/giridhar7632/profile-links'
 	}
 ]
 
 export const writings = [
 	{
-		title: 'Gamestore',
-		desc: 'A place where you can explore and buy exciting video games of various playforms at one place.',
-		link: 'https://github.com/giridhar7632/gamestore'
+		title: 'How edge functions move your back end close to your front end',
+		desc: 'Serverless functions have made computing seamless and fast. but for worldwide audiences, you need to get closer to your user to overcome latency.',
+		link: 'https://stackoverflow.blog/2023/02/23/how-edge-functions-move-your-back-end-close-to-your-front-end/'
 	},
 	{
-		title: 'Gamestore',
-		desc: 'A place where you can explore and buy exciting video games of various playforms at one place.',
-		link: 'https://github.com/giridhar7632/gamestore'
+		title:
+			'How to Build a Full Stack Content Management System using Next.js, Xata, and Cloudinary',
+		desc: "Managing a website's content is always challenging when developing a modern web application. Using a Content Management System (CMS) is one of the simple and efficient methods.",
+		link: 'https://dev.to/hackmamba/how-to-build-a-full-stack-content-management-system-using-nextjs-xata-and-cloudinary-iaa'
 	},
 	{
-		title: 'Gamestore',
-		desc: 'A place where you can explore and buy exciting video games of various playforms at one place.',
-		link: 'https://github.com/giridhar7632/gamestore'
+		title: 'Memory Game',
+		desc: 'Create your own memory game using JavaScript',
+		link: 'https://workshops.hackclub.com/memory_game/'
+	},
+	{
+		title: 'Build a Jamstack Full-stack Application',
+		desc: 'Many modern approaches for designing flexible and scalable web applications have become popular as browsers have evolved. Jamstack is one of these cutting-edge techniques to develop lightning-fast web apps.',
+		link: 'https://dev.to/hackmamba/build-a-full-stack-jamstack-application-5apm'
+	},
+	{
+		title:
+			'Why solve a problem twice? Design patterns let you apply existing solutions to your code',
+		desc: 'Software design patterns are like best practices employed by many experienced software developers. You can use design patterns to make your application scalable and flexible.',
+		link: 'https://stackoverflow.blog/2021/10/13/why-solve-a-problem-twice-design-patterns-let-you-apply-existing-solutions-to-your-code/'
+	},
+	{
+		title: 'Strategy Design Pattern in Python',
+		desc: 'Learn strategy design pattern to write better code in Python',
+		link: 'https://auth0.com/blog/strategy-design-pattern-in-python/'
+	},
+	{
+		title: 'Configuring PostgreSQL as Auth0 Custom Database',
+		desc: 'Connect Auth0 to PostgreSQL to create and maintain your own user store.',
+		link: 'https://auth0.com/blog/configuring-postgresql-as-auth0-custom-database/'
 	}
 ]
+
+export const featured = {
+	projects: projects.slice(0, 3),
+	writings: writings.slice(0, 3)
+}

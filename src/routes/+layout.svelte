@@ -14,8 +14,10 @@
 		<slot />
 	</main>
 	<section id="contact" class="flex flex-col justify-center min-h-[50vh] px-2 md:px-4 my-16">
-		<h2 class="text-5xl font-black my-5">Say hi to me</h2>
-		<p class="text-3xl text-gray-500 dark:text-gray-400 font-bold my-5">
+		<h2 class="text-5xl font-black text-gray-800 dark:text-gray-200 my-5">Say hi to me</h2>
+		<p
+			class="text-xl md:text-3xl text-ellipsis text-gray-500 dark:text-gray-400 font-bold my-5 max-w-full"
+		>
 			<a href={'mailto:giridhar.talla2002@gmail.com'}>👉 giridhar.talla2002@gmail.com</a>
 		</p>
 	</section>
