@@ -42,11 +42,15 @@
 		A Full Stack Developer who turns ideas into reality, fueled by a passion for design and content.
 	</p>
 	<div class="flex items-center gap-4 my-6">
-		<Button class="text-sm sm:text-base"
-			>Get connected
-			<Arrow size={20} />
-		</Button>
-		<Button class="text-sm sm:text-base">Resume</Button>
+		<a href={'#contact'}>
+			<Button class="text-sm sm:text-base"
+				>Get connected
+				<Arrow size={20} />
+			</Button>
+		</a>
+		<a href={'/resume.pdf'}>
+			<Button class="text-sm sm:text-base">Resume</Button>
+		</a>
 	</div>
 </section>
 
