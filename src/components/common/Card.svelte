@@ -14,7 +14,7 @@
 	>
 		<div class="flex justify-between items-center w-full">
 			<h1
-				class="font-black leading-snug text-4xl md:text-7xl grow-0 tracking-tight text-gray-800 dark:text-gray-100 group-hover:text-gray-100 dark:group-hover:text-gray-700 duration-300"
+				class="font-black leading-snug text-4xl md:text-5xl grow-0 tracking-tight text-gray-800 dark:text-gray-100 group-hover:text-gray-100 dark:group-hover:text-gray-700 duration-300"
 			>
 				{title}
 			</h1>
