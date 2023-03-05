@@ -18,6 +18,10 @@
 	.link:hover::after {
 		@apply h-['50%'];
 	} */
+	h1,h2,h3,h4, button{
+		font-family: 'Clash Grotesk', 'Inter', sans-serif;
+	}
+
 
 	*::-webkit-scrollbar {
 		@apply h-4 w-1;
