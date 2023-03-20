@@ -61,7 +61,7 @@
 			small courses on web developemnt and programming using various technologies, mainly using
 			JavaScript and Python. Currently, I write blog posts for various developer blogs such as <a
 				href={'https://stackoverflow.blog/author/giridhar-talla/'}>StackOverflow blog</a
-			>, <a href={'https://www.honeybadger.io/blog/python-pdf/#authorDetails'}>HoneyBadger</a>,
+			>, <a href={'https://www.honeybadger.io/blog/authors/giridhartalla/'}>HoneyBadger</a>,
 			<a href={'https://auth0.com/blog/authors/giridhar-talla/'}>Auth0 blog</a>,
 			<a href={'https://workshops.hackclub.com/'}>HackClub workshops</a>, etc.
 		</p>
