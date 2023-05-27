@@ -48,9 +48,9 @@
 				<Arrow size={20} />
 			</Button>
 		</a>
-		<a href={'/resume.pdf'}>
+		<!-- <a href={'/resume.pdf'}>
 			<Button class="text-sm sm:text-base">Resume</Button>
-		</a>
+		</a> -->
 	</div>
 </section>
 
