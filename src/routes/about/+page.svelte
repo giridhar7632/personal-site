@@ -18,9 +18,9 @@
 					<Arrow size={20} />
 				</Button>
 			</a>
-			<!-- <a href={'/resume.pdf'}>
+			<a href={'/resume.pdf'}>
 				<Button class="text-sm sm:text-base">Resume</Button>
-			</a> -->
+			</a>
 		</div>
 		<ul class="flex flex-wrap items-center my-3 text-sm text-gray-700 dark:text-gray-200 sm:mt-0">
 			<li>
