@@ -1,9 +1,10 @@
 <script>
-	import { onMount } from 'svelte'
+	// import { onMount } from 'svelte'
 	import Button from '../components/common/Button.svelte'
 	import Card from '../components/common/Card.svelte'
 	import Arrow from '../components/icons/Arrow.svelte'
-	import { applyTheme, DARK_PREFERENCE, featured } from '../utils/store'
+	import { featured } from '../utils/store'
+	// import { applyTheme, DARK_PREFERENCE, featured } from '../utils/store'
 
 	// import { spring } from 'svelte/motion'
 
@@ -17,10 +18,10 @@
 
 	// let size = spring(10)
 
-	onMount(() => {
-		applyTheme()
-		window.matchMedia(DARK_PREFERENCE).addEventListener('change', applyTheme)
-	})
+	// onMount(() => {
+	// 	applyTheme()
+	// 	window.matchMedia(DARK_PREFERENCE).addEventListener('change', applyTheme)
+	// })
 </script>
 
 <!-- <svg
