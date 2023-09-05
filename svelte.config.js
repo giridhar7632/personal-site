@@ -3,6 +3,7 @@ import { vitePreprocess } from '@sveltejs/kit/vite'
 
 import { mdsvex, escapeSvelte } from 'mdsvex'
 import remarkUnwrapImages from 'remark-unwrap-images'
+import autolink from 'rehype-autolink-headings'
 import remarkToc from 'remark-toc'
 import rehypeSlug from 'rehype-slug'
 import shiki from 'shiki'
@@ -20,8 +21,8 @@ const mdsvexOptions = {
 			return `{@html \`${html}\` }`
 		}
 	},
-	remarkPlugins: [remarkUnwrapImages, [remarkToc, { tight: true }]],
-	rehypePlugins: [rehypeSlug]
+	remarkPlugins: [remarkUnwrapImages, [remarkToc, { heading: 'contents', tight: true }]],
+	rehypePlugins: [rehypeSlug, [autolink, { behavior: 'wrap' }]]
 }
 
 /** @type {import('@sveltejs/kit').Config} */
