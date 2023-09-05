@@ -1,7 +1,12 @@
 <script>
-	import '../app.css'
-	import Nav from '../components/layout/Nav.svelte'
-	import Footer from '../components/layout/Footer.svelte'
+	import PageTransition from './transition.svelte'
+
+	import '@/app.css'
+	import Nav from '@/components/layout/Nav.svelte'
+	import Footer from '@/components/layout/Footer.svelte'
+
+	export let data
+	export const prerender = true
 </script>
 
 <div
@@ -11,7 +16,9 @@
 	<Nav />
 
 	<main class="flex-1 flex flex-col text-gray-800 dark:text-gray-100">
-		<slot />
+		<PageTransition url={data.url}>
+			<slot />
+		</PageTransition>
 	</main>
 	<section id="contact" class="flex flex-col justify-center min-h-[50vh] px-2 md:px-4 my-16">
 		<h2 class="text-5xl font-black text-gray-800 dark:text-gray-200 my-5">Say hi to me</h2>

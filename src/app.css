@@ -3,25 +3,25 @@
 @tailwind utilities;
 
 @layer base {
-	/* .link {
-		@apply relative inline-block z-1 text-gray-800 transition-all duration-75;
-	}
-
-	.link::after {
-		@apply absolute content-[''] bottom-0 left-0 right-0 -z-1 h-['1px'] bg-sky-300;
-	}
-
-	.link:hover {
-		@apply text-gray-800;
-	}
-
-	.link:hover::after {
-		@apply h-['50%'];
-	} */
-	h1,h2,h3,h4, button{
+	h1,
+	h2,
+	h3,
+	h4,
+	button {
 		font-family: 'Clash Grotesk', 'Inter', sans-serif;
 	}
 
+	.prose h2 {
+		@apply text-3xl font-bold mt-8 mb-3 md:text-4xl dark:text-gray-50;
+	}
+
+	.prose p {
+		@apply my-4;
+	}
+
+	.prose pre {
+		@apply my-8 mx-2 md:mx-4;
+	}
 
 	*::-webkit-scrollbar {
 		@apply h-4 w-1;

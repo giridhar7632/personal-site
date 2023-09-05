@@ -1,10 +1,10 @@
 <script>
 	// import { onMount } from 'svelte'
-	import Button from '../components/common/Button.svelte'
-	import Card from '../components/common/Card.svelte'
-	import Arrow from '../components/icons/Arrow.svelte'
-	import { featured } from '../utils/store'
-	// import { applyTheme, DARK_PREFERENCE, featured } from '../utils/store'
+	import Button from '@/components/common/Button.svelte'
+	import Card from '@/components/common/Card.svelte'
+	import Arrow from '@/components/icons/Arrow.svelte'
+	import { featured } from '@/lib/store'
+	// import { applyTheme, DARK_PREFERENCE, featured } from '@utils/store'
 
 	// import { spring } from 'svelte/motion'
 

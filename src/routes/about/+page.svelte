@@ -1,7 +1,7 @@
 <script>
-	import Button from '../../components/common/Button.svelte'
-	import Link from '../../components/common/Link.svelte'
-	import Arrow from '../../components/icons/Arrow.svelte'
+	import Button from '@/components/common/Button.svelte'
+	import Link from '@/components/common/Link.svelte'
+	import Arrow from '@/components/icons/Arrow.svelte'
 </script>
 
 <section id="projects" class="block min-h-screen px-2 py-5 md:px-4">
