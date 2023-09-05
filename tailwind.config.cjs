@@ -11,7 +11,11 @@ module.exports = {
 			},
 			zIndex: {
 				1: '1'
+			},
+			maxWidth: {
+				post: '768px'
 			}
 		}
-	}
+	},
+	plugins: [require('@tailwindcss/typography')]
 }

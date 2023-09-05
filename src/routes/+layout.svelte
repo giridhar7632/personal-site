@@ -1,17 +1,24 @@
 <script>
-	import '../app.css'
-	import Nav from '../components/layout/Nav.svelte'
-	import Footer from '../components/layout/Footer.svelte'
+	import PageTransition from './transition.svelte'
+
+	import '@/app.css'
+	import Nav from '@/components/layout/Nav.svelte'
+	import Footer from '@/components/layout/Footer.svelte'
+
+	export let data
+	console.log(data.url)
 </script>
 
 <div
-	class="absolute inset-0 w-screen min-h-screen -z-1  bg-[url('/bg.png')] opacity-30 dark:opacity-70 bg-no-repeat bg-top blur-[150px] dark:blur-[132px]"
+	class={`absolute inset-0 w-screen min-h-screen -z-1  bg-[url('/bg.png')] opacity-30 ${data.url.startsWith('/blog/') ? 'dark:opacity-20' : 'dark:opacity-70'} bg-no-repeat bg-top blur-[150px] dark:blur-[132px]`}
 />
 <div class="container max-w-5xl mx-auto flex flex-col min-h-screen">
 	<Nav />
 
 	<main class="flex-1 flex flex-col text-gray-800 dark:text-gray-100">
-		<slot />
+		<PageTransition url={data.url}>
+			<slot />
+		</PageTransition>
 	</main>
 	<section id="contact" class="flex flex-col justify-center min-h-[50vh] px-2 md:px-4 my-16">
 		<h2 class="text-5xl font-black text-gray-800 dark:text-gray-200 my-5">Say hi to me</h2>

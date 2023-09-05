@@ -1,9 +1,9 @@
 <script>
-	import Button from '../../components/common/Button.svelte'
-	import Card from '../../components/common/Card.svelte'
-	import Arrow from '../../components/icons/Arrow.svelte'
+	import Button from '@/components/common/Button.svelte'
+	import Card from '@/components/common/Card.svelte'
+	import Arrow from '@/components/icons/Arrow.svelte'
 
-	import { writings } from '../../utils/store'
+	import { writings } from '@/lib/store'
 </script>
 
 <section id="projects" class="block min-h-screen px-2 py-5 md:px-4">

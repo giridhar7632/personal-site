@@ -1,5 +1,5 @@
 <script>
-	// import { currentTheme, toggleTheme } from '../../utils/store'
+	// import { currentTheme, toggleTheme } from '@/utils/store'
 	import { onMount } from 'svelte'
 	import { page } from '$app/stores'
 	import ThemeSwitch from '../common/ThemeSwitch.svelte'
@@ -46,7 +46,7 @@
 			{showMenu ? 'Close' : 'Menu'}
 		</button>
 		<div
-			class={`absolute md:opacity-100 transistion-all duration-300 z-10 top-10 left-0 md:translate-x-0 md:top-0 md:relative w-full md:block md:w-auto ${
+			class={`absolute md:opacity-100 transistion-all ease-in-out duration-300 z-10 top-10 left-0 md:translate-x-0 md:top-0 md:relative w-full md:block md:w-auto ${
 				showMenu ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'
 			}`}
 			id="navbar-default"
@@ -69,6 +69,16 @@
 							href="about"
 							class="block py-2 pl-3 pr-4 text-gray-700 rounded md:border-0 md:hover:text-sky-600  md:p-0 dark:text-white md:dark:hover:text-sky-300  dark:hover:text-white "
 							>About</a
+						>
+					</li>
+				{/if}
+
+				{#if path !== '/blog'}
+					<li>
+						<a
+							href={path === '/' ? '/blog' : '/blog'}
+							class="block py-2 pl-3 pr-4 text-gray-700 rounded md:border-0 md:hover:text-sky-600  md:p-0 dark:text-white md:dark:hover:text-sky-300  dark:hover:text-white "
+							>Blog</a
 						>
 					</li>
 				{/if}
