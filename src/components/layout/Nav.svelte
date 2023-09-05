@@ -72,21 +72,23 @@
 						>
 					</li>
 				{/if}
-				{#if path !== '/projects'}
-					<li>
-						<a
-							href={path === '/' ? '#projects' : '/projects'}
-							class="block py-2 pl-3 pr-4 text-gray-700 rounded md:border-0 md:hover:text-sky-600  md:p-0 dark:text-white md:dark:hover:text-sky-300  dark:hover:text-white "
-							>Projects</a
-						>
-					</li>
-				{/if}
+
 				{#if path !== '/writings'}
 					<li>
 						<a
 							href={path === '/' ? '#writings' : '/writings'}
 							class="block py-2 pl-3 pr-4 text-gray-700 rounded md:border-0 md:hover:text-sky-600  md:p-0 dark:text-white md:dark:hover:text-sky-300  dark:hover:text-white "
 							>Writings</a
+						>
+					</li>
+				{/if}
+
+				{#if path !== '/projects'}
+					<li>
+						<a
+							href={path === '/' ? '#projects' : '/projects'}
+							class="block py-2 pl-3 pr-4 text-gray-700 rounded md:border-0 md:hover:text-sky-600  md:p-0 dark:text-white md:dark:hover:text-sky-300  dark:hover:text-white "
+							>Projects</a
 						>
 					</li>
 				{/if}

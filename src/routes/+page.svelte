@@ -55,19 +55,6 @@
 	</div>
 </section>
 
-<section id="projects" class="block min-h-screen px-2 py-5 md:px-4 my-10">
-	<h2 class="text-3xl font-black mb-5 text-gray-600 dark:text-gray-300">Projects</h2>
-	{#each featured.projects as project}
-		<Card {...project} />
-	{/each}
-	<a href={'/projects'}>
-		<Button variant="text" class="w-full text-gray-400">
-			All projects
-			<Arrow size={20} />
-		</Button>
-	</a>
-</section>
-
 <section id="writings" class="block min-h-screen px-2 py-5 md:px-4 my-10">
 	<h2 class="text-3xl font-black my-5 text-gray-600 dark:text-gray-300">Writings</h2>
 	{#each featured.writings as post}
@@ -76,6 +63,19 @@
 	<a href="/writings">
 		<Button variant="text" class="w-full text-gray-400">
 			All writings
+			<Arrow size={20} />
+		</Button>
+	</a>
+</section>
+
+<section id="projects" class="block min-h-screen px-2 py-5 md:px-4 my-10">
+	<h2 class="text-3xl font-black mb-5 text-gray-600 dark:text-gray-300">Projects</h2>
+	{#each featured.projects as project}
+		<Card {...project} />
+	{/each}
+	<a href={'/projects'}>
+		<Button variant="text" class="w-full text-gray-400">
+			All projects
 			<Arrow size={20} />
 		</Button>
 	</a>
