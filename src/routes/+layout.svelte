@@ -6,11 +6,11 @@
 	import Footer from '@/components/layout/Footer.svelte'
 
 	export let data
-	export const prerender = true
+	console.log(data.url)
 </script>
 
 <div
-	class="absolute inset-0 w-screen min-h-screen -z-1  bg-[url('/bg.png')] opacity-30 dark:opacity-70 bg-no-repeat bg-top blur-[150px] dark:blur-[132px]"
+	class={`absolute inset-0 w-screen min-h-screen -z-1  bg-[url('/bg.png')] opacity-30 ${data.url.startsWith('/blog/') ? 'dark:opacity-20' : 'dark:opacity-70'} bg-no-repeat bg-top blur-[150px] dark:blur-[132px]`}
 />
 <div class="container max-w-5xl mx-auto flex flex-col min-h-screen">
 	<Nav />

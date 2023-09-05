@@ -31,7 +31,7 @@
 	</hgroup>
 
   <!-- Post -->
-	<div class="prose max-w-post mx-auto px-4 dark:text-gray-100 text-gray-800 md:px-2">
+	<div class="prose dark:prose-invert max-w-post mx-auto px-4 md:px-2">
 		<svelte:component this={data.content} />
 	</div>
 </article>
