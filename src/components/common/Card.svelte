@@ -34,11 +34,11 @@
 			{description}
 		</p>
 		{#if date}
-		<p
-			class="text-gray-400 group-hover:text-gray-500 dark:text-gray-500 dark:group-hover:text-gray-400 duration-300 ease-in-out mb-2 text-sm"
-		>
-			{date}
-		</p>
+			<p
+				class="text-gray-400 group-hover:text-gray-500 dark:text-gray-500 dark:group-hover:text-gray-400 duration-300 ease-in-out mb-2 text-sm"
+			>
+				{date}
+			</p>
 		{/if}
 	</div>
 </a>

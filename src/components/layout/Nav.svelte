@@ -29,7 +29,7 @@
 		<button
 			type="button"
 			on:click={toggleMenu}
-			class="inline-flex items-center p-2 ml-3 text-sm text-gray-800 rounded-lg md:hidden  focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-white  dark:focus:ring-gray-300"
+			class="inline-flex items-center p-2 ml-3 text-sm text-gray-800 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-white dark:focus:ring-gray-300"
 		>
 			<!-- <svg
 				class="w-6 h-6"
@@ -58,7 +58,7 @@
 					<li>
 						<a
 							href="/"
-							class="block py-2 pl-3 pr-4 text-gray-700 rounded md:border-0 md:hover:text-sky-600  md:p-0 dark:text-white md:dark:hover:text-sky-300  dark:hover:text-white"
+							class="block py-2 pl-3 pr-4 text-gray-700 rounded md:border-0 md:hover:text-sky-600 md:p-0 dark:text-white md:dark:hover:text-sky-300 dark:hover:text-white"
 							>Home</a
 						>
 					</li>
@@ -67,7 +67,7 @@
 					<li>
 						<a
 							href="about"
-							class="block py-2 pl-3 pr-4 text-gray-700 rounded md:border-0 md:hover:text-sky-600  md:p-0 dark:text-white md:dark:hover:text-sky-300  dark:hover:text-white "
+							class="block py-2 pl-3 pr-4 text-gray-700 rounded md:border-0 md:hover:text-sky-600 md:p-0 dark:text-white md:dark:hover:text-sky-300 dark:hover:text-white"
 							>About</a
 						>
 					</li>
@@ -77,7 +77,7 @@
 					<li>
 						<a
 							href={path === '/' ? '/blog' : '/blog'}
-							class="block py-2 pl-3 pr-4 text-gray-700 rounded md:border-0 md:hover:text-sky-600  md:p-0 dark:text-white md:dark:hover:text-sky-300  dark:hover:text-white "
+							class="block py-2 pl-3 pr-4 text-gray-700 rounded md:border-0 md:hover:text-sky-600 md:p-0 dark:text-white md:dark:hover:text-sky-300 dark:hover:text-white"
 							>Blog</a
 						>
 					</li>
@@ -87,7 +87,7 @@
 					<li>
 						<a
 							href={path === '/' ? '#writings' : '/writings'}
-							class="block py-2 pl-3 pr-4 text-gray-700 rounded md:border-0 md:hover:text-sky-600  md:p-0 dark:text-white md:dark:hover:text-sky-300  dark:hover:text-white "
+							class="block py-2 pl-3 pr-4 text-gray-700 rounded md:border-0 md:hover:text-sky-600 md:p-0 dark:text-white md:dark:hover:text-sky-300 dark:hover:text-white"
 							>Writings</a
 						>
 					</li>
@@ -97,7 +97,7 @@
 					<li>
 						<a
 							href={path === '/' ? '#projects' : '/projects'}
-							class="block py-2 pl-3 pr-4 text-gray-700 rounded md:border-0 md:hover:text-sky-600  md:p-0 dark:text-white md:dark:hover:text-sky-300  dark:hover:text-white "
+							class="block py-2 pl-3 pr-4 text-gray-700 rounded md:border-0 md:hover:text-sky-600 md:p-0 dark:text-white md:dark:hover:text-sky-300 dark:hover:text-white"
 							>Projects</a
 						>
 					</li>
@@ -105,7 +105,7 @@
 				<li>
 					<a
 						href="#contact"
-						class="block py-2 pl-3 pr-4 text-gray-700 rounded md:border-0 md:hover:text-sky-600  md:p-0 dark:text-white md:dark:hover:text-sky-300  dark:hover:text-white "
+						class="block py-2 pl-3 pr-4 text-gray-700 rounded md:border-0 md:hover:text-sky-600 md:p-0 dark:text-white md:dark:hover:text-sky-300 dark:hover:text-white"
 						>Contact</a
 					>
 				</li>
