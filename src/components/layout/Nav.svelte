@@ -109,6 +109,13 @@
 						>Contact</a
 					>
 				</li>
+				<li>
+					<a
+						href="https://guestbook-giridhar7632.vercel.app/"
+						class="block py-2 pl-3 pr-4 text-gray-700 rounded md:border-0 md:hover:text-sky-600 md:p-0 dark:text-white md:dark:hover:text-sky-300 dark:hover:text-white"
+						>Guestbook</a
+					>
+				</li>
 				<li class="flex align-middle">
 					<ThemeSwitch />
 				</li>
