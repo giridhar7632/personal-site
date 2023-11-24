@@ -72,16 +72,14 @@
 						>
 					</li>
 				{/if}
-
-				{#if path !== '/blog'}
-					<li>
-						<a
-							href={path === '/' ? '/blog' : '/blog'}
-							class="block py-2 pl-3 pr-4 text-gray-700 rounded md:border-0 md:hover:text-sky-600  md:p-0 dark:text-white md:dark:hover:text-sky-300  dark:hover:text-white "
-							>Blog</a
-						>
-					</li>
-				{/if}
+				<li>
+					<a
+						href="https://giridhartalla.medium.com/"
+						target="_blank"
+						class="block py-2 pl-3 pr-4 text-gray-700 rounded md:border-0 md:hover:text-sky-600  md:p-0 dark:text-white md:dark:hover:text-sky-300  dark:hover:text-white "
+						>Blog</a
+					>
+				</li>
 
 				{#if path !== '/writings'}
 					<li>
@@ -112,6 +110,7 @@
 				<li>
 					<a
 						href="https://guestbook-giridhar7632.vercel.app/"
+						target="_blank"
 						class="block py-2 pl-3 pr-4 text-gray-700 rounded md:border-0 md:hover:text-sky-600 md:p-0 dark:text-white md:dark:hover:text-sky-300 dark:hover:text-white"
 						>Guestbook</a
 					>
