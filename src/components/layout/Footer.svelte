@@ -18,7 +18,7 @@
 			<Link href={'https://www.instagram.com/mr_talla7632/'} external>Instagram</Link>
 		</li>
 		<li>
-			<Link href={'https://twitter.com/@giridhar-talla'} external>Twitter</Link>
+			<Link href={'https://twitter.com/@giridhar_talla'} external>Twitter</Link>
 		</li>
 	</ul>
 </footer>
