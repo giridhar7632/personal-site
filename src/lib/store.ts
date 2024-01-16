@@ -38,6 +38,11 @@
 
 export const projects = [
 	{
+		title: '📈 FormUlate',
+		description: 'An open source AI app for crafting form UI from language. Powered by Gemini pro.',
+		link: 'https://github.com/giridhar7632/FormUlate'
+	},
+	{
 		title: '🕹️ Gamestore',
 		description:
 			'A place where you can explore and buy exciting video games of various playforms at one place.',
@@ -81,6 +86,12 @@ export const projects = [
 ]
 
 export const writings = [
+	{
+		title: 'How Lee Robinson created his Guestbook, and you can do it too',
+		description:
+			"Ready to dive in and build a guestbook app using the Vercel stack? Let's do this!",
+		link: 'https://bejamas.io/blog/how-to-create-a-guestbook/'
+	},
 	{
 		title: 'How edge functions move your back end close to your front end',
 		description:
