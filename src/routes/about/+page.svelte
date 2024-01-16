@@ -40,7 +40,10 @@
 	<div class="my-6">
 		<!-- <h2 class="text-3xl font-bold mb-4 text-gray-600 dark:text-gray-300">As a Developer...</h2> -->
 		<p class="text-gray-600 text-xl dark:text-gray-300 mb-5">
-			I have been a full-stack JavaScript developer for over 2 years. I like JavaScript and Python because they let me create web and mobile applications. I can create interactive front-end for web applications using JavaScript while also program the backend for them. I also enjoy building complex machine learning models using Python.
+			I have been a full-stack JavaScript developer for over 2 years. I like JavaScript and Python
+			because they let me create web and mobile applications. I can create interactive front-end for
+			web applications using JavaScript while also program the backend for them. I also enjoy
+			building complex machine learning models using Python.
 		</p>
 		<a href={'/projects'}>
 			<Button variant="text" class="w-full text-gray-400 hover:ring-gray-400">
@@ -54,11 +57,14 @@
 			As a Technical writer...
 		</h2> -->
 		<p class="text-gray-600 text-xl dark:text-gray-300 mb-5">
-			Besides coding, I love writing and sharing what I know with others. I mostly write about web development with JavaScript and programming concepts with Python. Currently, I write blog posts for various developer blogs such as <a
+			Besides coding, I love writing and sharing what I know with others. I mostly write about web
+			development with JavaScript and programming concepts with Python. Currently, I write blog
+			posts for various developer blogs such as <a
 				href={'https://stackoverflow.blog/author/giridhar-talla/'}>StackOverflow blog</a
 			>, <a href={'https://www.honeybadger.io/blog/authors/giridhartalla/'}>HoneyBadger</a>,
 			<a href={'https://auth0.com/blog/authors/giridhar-talla/'}>Auth0 blog</a>,
-			<a href={'https://workshops.hackclub.com/'}>HackClub workshops</a>, etc. It makes me happy to know that my work can help others. 
+			<a href={'https://workshops.hackclub.com/'}>HackClub workshops</a>, etc. It makes me happy to
+			know that my work can help others.
 		</p>
 		<a href="/writings">
 			<Button variant="text" class="w-full text-gray-400 hover:ring-gray-400">

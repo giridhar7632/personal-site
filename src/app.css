@@ -11,8 +11,12 @@
 		font-family: 'Clash Grotesk', 'Inter', sans-serif;
 	}
 
-	.prose h2 {
-		@apply text-3xl font-bold mt-8 mb-3 md:text-4xl dark:text-gray-50;
+	.prose h2 a {
+		@apply text-3xl font-bold mt-8 mb-3 before:text-3xl md:text-4xl dark:text-gray-50 before:opacity-50 before:font-normal no-underline;
+	}
+
+	.prose h2 a::before {
+		content: '# ';
 	}
 
 	.prose p {

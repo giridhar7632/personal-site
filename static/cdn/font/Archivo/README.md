@@ -1,16 +1,21 @@
 # Installing Webfonts
+
 Follow these simple Steps.
 
 ## 1.
+
 Put `archivo/` Folder into a Folder called `fonts/`.
 
 ## 2.
+
 Put `archivo.css` into your `css/` Folder.
 
 ## 3. (Optional)
+
 You may adapt the `url('path')` in `archivo.css` depends on your Website Filesystem.
 
 ## 4.
+
 Import `archivo.css` at the top of you main Stylesheet.
 
 ```
@@ -18,7 +23,6 @@ Import `archivo.css` at the top of you main Stylesheet.
 ```
 
 ## 5.
-
 
 ```
 font-family: 'Archivo-Variable';
@@ -42,4 +46,3 @@ font-family: 'Archivo-ExtraBoldItalic';
 font-family: 'Archivo-Black';
 font-family: 'Archivo-BlackItalic';
 ```
-
