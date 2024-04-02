@@ -38,6 +38,11 @@
 
 export const projects = [
 	{
+		title: '🛰️ Farmware',
+		description: 'An app for farmers integrated with satellite imagery for soil moisture analysis.',
+		link: 'https://github.com/giridhar7632/Farmware'
+	},
+	{
 		title: '📈 FormUlate',
 		description: 'An open source AI app for crafting form UI from language. Powered by Gemini pro.',
 		link: 'https://github.com/giridhar7632/FormUlate'
