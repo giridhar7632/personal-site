@@ -11,9 +11,9 @@
 		<meta key="og_site" property="og:name" content="giridhar-talla" />
 		<meta key="og_url" property="og:url" content="https://giridhar.pages.dev" />
 
-		<title key="title">Giridhar Talla | Full Stack Web Developer</title>
-		<meta key="og_title" property="og:title" content="Giridhar Talla | Full Stack Web Developer" />
-		<meta key="tw_title" name="twitter:title" content="Giridhar Talla | Full Stack Web Developer" />
+		<title key="title">Giridhar Talla | Software engineer who builds and ships web and mobile apps</title>
+		<meta key="og_title" property="og:title" content="Giridhar Talla | Software engineer who builds and ships web and mobile apps" />
+		<meta key="tw_title" name="twitter:title" content="Giridhar Talla | Software engineer who builds and ships web and mobile apps" />
 
 		<link rel="alternate" type="application/atom+xml" href="/rss.xml" />
 
@@ -45,29 +45,10 @@
 		<link href="/favicon.ico" rel="icon" type="image/ico" />
 		<meta key="tile_color" name="msapplication-TileColor" content="#2b5797" />
 		<meta key="theme_color" name="theme-color" content="#F5F5F5" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@700,400,600,500&display=swap"
-			rel="stylesheet"
-		/>
-
-		<script>
-			localStorage.theme === 'dark' ||
-			(!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
-				? document.documentElement.classList.add('dark')
-				: document.documentElement.classList.remove('dark')
-		</script>
-
 		%sveltekit.head%
 	</head>
 	<body
 		data-sveltekit-preload-data="hover"
-		class="relative bg-sky-50 ease-in-out dark:bg-gray-900 transition-colors duration-250 overflow-x-hidden"
 	>
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
