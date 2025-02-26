@@ -1,45 +1,120 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+:root {
+	font-family: "Roboto Mono", Menlo, monospace;
+}
 
-@layer base {
-	h1,
-	h2,
-	h3,
-	h4,
-	button {
-		font-family: 'Clash Grotesk', 'Inter', sans-serif;
-	}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
 
-	.prose h2 a {
-		@apply text-3xl font-bold mt-8 mb-3 before:text-3xl md:text-4xl dark:text-gray-50 before:opacity-50 before:font-normal no-underline;
-	}
+html,
+:host {
+  line-height: 1.5; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4;
+  tab-size: 4;
+  font-family: theme('fontFamily.sans', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"); /* 4 */
+  -webkit-tap-highlight-color: transparent; /* 7 */
+}
 
-	.prose h2 a::before {
-		content: '# ';
-	}
+html {
+	background-color: #f5f5f5;
+	color: #171717;
+	font-family: monospace;
 
-	.prose p {
-		@apply my-4;
-	}
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
 
-	.prose pre {
-		@apply my-8 mx-2 md:mx-4;
-	}
+body {
+	padding: 20px;
+	min-width: 100vw;
+	min-height: 100vh;
+}
 
-	*::-webkit-scrollbar {
-		@apply h-4 w-1;
-	}
+p {
+	display: block;
+	font-size: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
 
-	*::-webkit-scrollbar-track {
-		@apply rounded bg-gray-100;
-	}
+button {
+	padding: .5rem 1rem;
 
-	*::-webkit-scrollbar-thumb {
-		@apply rounded bg-gray-300;
-	}
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
 
-	*::-webkit-scrollbar-thumb:hover {
-		@apply cursor-pointer bg-gray-400;
-	}
+	font-size: .875rem;
+	line-height: 1.25rem;
+	height: 2rem;
+	font-family: 'Roboto-mono', monospace;
+	border: #171717;
+	border-radius: 999px;
+	font-size: 1em;
+	outline: none;
+	cursor: pointer;
+	font-weight: 500;
+}
+
+button.default {
+	background-color: #171717;
+	color: #f5f5f5;
+}
+
+button.default:hover {
+	background-color: #262626;
+}
+
+button.outline {
+	background-color: #ffffff;
+	color: #171717;
+	border: 1px solid #e5e5e5;
+}
+
+button.outline:hover {
+	color: #262626;
+	background-color: #fafafa;
+}
+
+.link {
+	color: inherit;
+	text-decoration: underline;
+	text-underline-offset: 4px;
+}
+
+.link:hover {
+	text-decoration-style: wavy;
+}
+
+main {
+	padding: 20px;
+}
+
+.max-w-lg {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.max-w-xl {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.avatar {
+	border-radius: 9999px;
+}
+
+.flex-col {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.text-xl {
+	font-size: 1.5rem;
+    line-height: 2rem
 }
