@@ -33,15 +33,30 @@
     {/each}
 </section>
 
-<p class="max-w-lg">More things about me are on my GitHub, <Link href="https://github.com/giridhar7632" external>@giridhar7632</Link>. Feel free to email me about anything at <Link href="mailto:giridhar.talla5139@gmail.com" external>giridhar.talla5139@gmail.com</Link>.</p>
+<p class="max-w-lg">
+    More things about me are on my GitHub, <Link
+        href="https://github.com/giridhar7632"
+        external>@giridhar7632</Link
+    >. Feel free to email me about anything at <Link
+        href="mailto:giridhar.talla5139@gmail.com"
+        external>giridhar.talla5139@gmail.com</Link
+    >.
+</p>
 
 <footer>
-    <p class="max-w-lg text-sm text-center"><i>You can find the code for this website on <Link href="https://github.com/giridhar7632/personal-website" external>GitHub</Link> ✌️</i></p>
+    <p class="max-w-lg text-sm text-center">
+        <i
+            >You can find the code for this website on <Link
+                href="https://github.com/giridhar7632/personal-website"
+                external>GitHub</Link
+            > ✌️</i
+        >
+    </p>
 </footer>
 
 <style>
     main {
-        margin-top:15vh;
+        margin-top: 15vh;
     }
 
     .text-sm {
@@ -58,26 +73,30 @@
     }
 
     .grid-1 {
-	  display: grid;
-	  grid-template-columns: 1fr;
-	  gap: 8px;
-	  margin-top: 24px;
-	}
-    
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 8px;
+        margin-top: 24px;
+    }
+
     .grid-3 {
-	  display: grid;
-	  grid-template-columns: 1fr 1fr 1fr;
-	  gap: 8px;
-	  margin-top: 8px;
-	}
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 8px;
+        margin-top: 8px;
+    }
 
     footer {
         padding: 40px 0;
     }
-	
-	@media screen and (max-width: 768px) {
-	  .grid-1, .grid-3 {
-		grid-template-columns: 1fr;
-	  }
-	}
+
+    @media screen and (max-width: 768px) {
+        main {
+            margin-top: 5vh;
+        }
+        .grid-1,
+        .grid-3 {
+            grid-template-columns: 1fr;
+        }
+    }
 </style>
