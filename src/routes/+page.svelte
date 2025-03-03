@@ -47,7 +47,7 @@
     <p class="max-w-lg text-sm text-center">
         <i
             >You can find the code for this website on <Link
-                href="https://github.com/giridhar7632/personal-website"
+                href="https://github.com/giridhar7632/personal-site"
                 external>GitHub</Link
             > ✌️</i
         >
