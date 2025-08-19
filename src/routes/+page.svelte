@@ -15,7 +15,7 @@
         <a href="mailto:giridhar.talla5139@gmail.com"><Button>email me</Button></a>
         <a href="https://giridhar.pages.dev/resume.pdf" target="_blank"><Button variant='outline'>view resume</Button></a>
     </div>
-    <p><Link href="https://github.com/giridhar7632">github</Link> ~ <Link href="https://x.com/giridhar-talla">twitter</Link> ~ <Link href="https://linkedin.com/in/giridhar7632">linkedin</Link> </p>
+    <p><Link href="https://github.com/giridhar7632">github</Link> ~ <Link href="https://x.com/giridhar-talla">twitter</Link> ~ <Link href="https://www.linkedin.com/in/giridhar-talla/">linkedin</Link> </p>
     <p>Here are some projects I've worked on:</p>
 </main>
 
