@@ -1,5 +1,17 @@
 export const projects = [
     {
+        title: 'hive-app',
+        description: 'Minimal framework for distributed model training',
+        link: 'https://github.com/giridhar7632/hype-app',
+        language: 'Python'
+    },
+    {
+        title: 'hypr-app',
+        description: 'An AI-powered platform that analyzes market sentiment from news and social media to generate trading signals.',
+        link: 'https://github.com/giridhar7632/hypr-app',
+        language: 'Python'
+    },
+    {
         title: 'FormUlate',
         description: '📈 a simple AI app for crafting form UI from language',
         link: 'https://github.com/giridhar7632/Formulate',
@@ -12,25 +24,11 @@ export const projects = [
 		language: 'Typescript'
 	},
 	{
-		title: 'helpinghands',
-		description:
-			'🩷 A network of care and collaboration (volunteering)',
-		link: 'https://github.com/giridhar7632/helpinghands',
-		language: 'Typescript'
-	},
-	{
 		title: 'hobit',
 		description:
 			'🦉 track your bit-sized habits (this app also reminds you)',
 		link: 'https://github.com/giridhar7632/hobit',
 		language: 'JavaScript'
-	},
-	{
-		title: 'Ecommerce CMS',
-		description:
-			'✨ The content management system for e-commerce website',
-		link: 'https://github.com/giridhar7632/jamstackhack-22',
-        language: 'JavaScript'
 	},
 	{
 		title: 'Scrapbook',
